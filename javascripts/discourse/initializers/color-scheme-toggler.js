@@ -70,7 +70,7 @@ export default {
 
     if (settings.add_color_scheme_toggle_to_header) {
       withPluginApi("0.8", (api) => {
-        api.headerIcons.add("toggler", <template><li class="header-toggle-button header-dropdown-toggle"><ColorSchemeToggler /></li></template>);
+        api.headerIcons.add("toggler", ColorSchemeToggler, { before: "search" });
       });
     }
   },
