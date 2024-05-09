@@ -1,9 +1,22 @@
-.header-toggle-button {
-  // this is not ideal, we usually don't want to mess
-  // with button padding...
-  // but the problem here is that the other header elements aren't buttons
-  // they are anchors...
-  .btn {
-    padding: 0;
+.d-header-icons .btn.color-scheme-toggler {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.2857em;
+  height: 2.2857em;
+  padding: .2143em;
+  text-decoration: none;
+  border: 1px solid rgba(0,0,0,0);
+  transition: all linear .15s;
+  outline: none;
+  color: var(--primary-800);
+  background: var(--background-light);
+  border: 1px solid var(--primary-300);
+  margin-inline-end: .5em;
+  
+  &:hover {
+    background-color: var(--primary-100);
+    border: 1px solid var(--primary-400);
   }
 }
